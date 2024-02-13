@@ -24,16 +24,18 @@ const repeatBubble = () => {
 
   bubble.addEventListener("click", () => {
     touch++;
+    // noTouch--;
     numberTouch.textContent = touch;
     ring();
     bubble.remove();
   });
-
-  setTimeout(() => {
+  bubble.addEventListener("animationend", () => {
+    noTouch++;
+    numberNoTouch.textContent = noTouch;
     bubble.remove();
-  }, 8000);
+  });
 };
 
-setInterval(repeatBubble, 1000);
+setInterval(repeatBubble, 800);
 
 console.log();
