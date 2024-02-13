@@ -23,6 +23,8 @@ const repeatBubble = () => {
   };
 
   bubble.addEventListener("click", () => {
+    touch++;
+    numberTouch.textContent = touch;
     ring();
     bubble.remove();
   });
