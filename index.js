@@ -24,7 +24,6 @@ const repeatBubble = () => {
 
   bubble.addEventListener("click", () => {
     touch++;
-    // noTouch--;
     numberTouch.textContent = touch;
     ring();
     bubble.remove();
