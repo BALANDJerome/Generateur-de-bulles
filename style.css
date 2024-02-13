@@ -2,6 +2,8 @@ body {
   overflow: hidden;
   min-height: 100vh;
   cursor: crosshair;
+  display: flex;
+  justify-content: space-evenly;
 }
 .bubble {
   position: absolute;
@@ -17,7 +19,7 @@ body {
     top: -250px;
     left: var(--left);
     opacity: 1;
-    filter: hue-rotate(720deg);
+    filter: hue-rotate(1080deg);
   }
 }
 h3 {
@@ -25,4 +27,5 @@ h3 {
   text-align: center;
   margin-top: 20px;
   color: rgba(128, 128, 128, 0.555);
+  user-select: none;
 }
